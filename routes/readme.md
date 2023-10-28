@@ -1,4 +1,4 @@
-The number of functions Bhashini Project has and th routes that can be created to implement them are as follows:
+The number of functions Bhashini Project has and the routes that can be created to implement them are as follows:
 
 - Translate[NMT]: /translate
 - Speech to Text[ASR]: /speech-to-text

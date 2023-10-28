@@ -6,7 +6,7 @@ This is the backend of the API for the Bhashini Project. It is written in Node.j
 
 ## Endpoints
 
-The number of functions that Bhashini has to offer is as follows:
+The following endpoints are available:
 
 - Translate[NMT]: /translate
 - Speech to Text[ASR]: /speech-to-text
