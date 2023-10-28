@@ -1,8 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import bhashini from 'bhashini-translation';
-
+import nmtrouter from './routes/nmt.js';
 // Initialize express
 const app = express();
 
@@ -20,11 +19,8 @@ app.get('/', (req, res) => {
 	res.send("Hello, Welcome to the API for Bhashini's Project!");
 });
 
-// Initialize Bhashini
-const userID = process.env.USER_ID;
-const APIKey = process.env.API_KEY;
-const InferenceAPIKey = process.env.INFERENCE_API_KEY;
-bhashini.auth(userID, APIKey, InferenceAPIKey);
+// Route to NMT
+app.use('/translate', nmtrouter);
 
 // port to listen on
 const port = process.env.PORT || 5023;
